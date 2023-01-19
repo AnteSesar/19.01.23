@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadatak 10</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        p::first-letter{
+            color: blue;
+            font-size: 2em;
+        }
+        div{
+            border: gray solid 2px;
+        }
+        hr{
+            border: 2px solid red;
+            border-style: dotted;
+            /* Moglo je biti ovako
+            border: 2px dotted red;*/
+        }
+        span::after{
+            content: "\2713";
+            color: green;
+            font-size: 16px;
+            font-weight: 900;
+        }
+        .play::before{
+            content: "\2023";
+        }
+        ::marker{
+            color: red;
+        }
+        ul{
+            list-style: none;
+        }
+        .lista1{
+            list-style-type: upper-latin;
+        }
+        .lista2{
+            list-style-type: lower-latin;
+        }
+        a:visited{
+            color: magenta;
+        }
+        a:hover{
+            background-color: lightgreen;
+            color: yellow;
+        }
+        a:active{
+            background-color: yellow;
+            color: lightgreen;
+        }
+        ul li{
+            text-decoration: underline;
+        }
+        ul{
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <p>1 Koji je glavni grad Hrvatske?</p>
+        <ol class="lista1">
+            <li>Koprivnica</li>
+            <li>Osijek</li>
+            <li><span>Zagrab</span></li>
+            <li>Rijeka</li>
+        </ol>
+    </div>
+    <hr>
+    <div>
+        <p>2 Koja je rijeka koja protječe kroz Hrvatsku najduže?</p>
+        <ol class="lista2">
+            <li>Mura</li>
+            <li><span>Sava</span></li>
+            <li>Drava</li>
+            <li>Dunav</li>
+        </ol>
+    </div>
+    <hr>
+    <div>
+        <p>3 Pogledajte sljedeče video linkove</p>
+        <ul>
+            <li class="play"><a href="https://www.youtube.com/watch?v=n-eH8tkIs9s" target="_blank">Play bass guitar</a></li>
+            <li class="play"><a href="https://www.youtube.com/watch?v=EGJJf6ME7KI" target="_blank">Stop eating sugar</a></li>
+            <li class="play">Treći</li>
+            <li class="play">Četvrti</li>
+            <li class="play">Peti</li>
+        </ul>
+    </div>
+    <hr>
+</body>
+</html>
